@@ -1,0 +1,29 @@
+<div id="item-container" (click)="toggle()">
+    <p>The Normans</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:33%"></div>
+      <span>&nbsp;33%</span>
+    </div>
+</div>
+
+<div id="question-container" (click)="close()"
+     [ngStyle]="{'display': view == 'item' ? 'block' : 'none'}">
+    <div class="question"><p>Q1:&nbsp;</p>In what country is Normandy located?</div>
+    <div class="answer"><p>A1:&nbsp;</p>France</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:33%"></div>
+      <span>&nbsp;100%</span>
+    </div>
+    <div class="question"><p>Q2:&nbsp;</p>When were the Normans in Normandy?</div>
+    <div class="answer"><p>A2:&nbsp;</p>10th and 11th centuries</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+      <span>&nbsp;0%</span>
+    </div>
+    <div class="question"><p>Q3:&nbsp;</p>From which countries did the Norse originate?</div>
+    <div class="answer"><p>A3:&nbsp;</p>Denmark</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+      <span>&nbsp;0%</span>
+    </div>
+</div>
